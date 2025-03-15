@@ -26,12 +26,11 @@ elseif (is_404()) {
     echo 'Not Found - '; }
 if (is_home()) {
     bloginfo('name'); echo ' - '; bloginfo('description'); }
-elseif {
+else {
     bloginfo('name'); }
 if ($paged>1) {
     echo ' - page '. $paged; }
 ?>
-
 </title>
 <meta name="description" content="<?php bloginfo('description'); ?>">
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
