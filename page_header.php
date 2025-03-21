@@ -69,7 +69,7 @@ if ($paged>1) {
     </nav>
 
 <div class="smallpage-tag"><!--div that holds the content in the middle of the page- -->
-        <h1 class="smallpage-title"> Josh'CV </h1><!-- the main tag line-->
+        <h1 class="smallpage-title"> Projects </h1><!-- the main tag line-->
     </div>
     </div><!--container-->
     <?php wp_head(); ?>
