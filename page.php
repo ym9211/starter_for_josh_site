@@ -15,10 +15,8 @@
             <?php the_content(); ?>
         <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong>', 'after' => '</p>')); ?>
         </div><!--postcontet-->
-        
-    </div><!--post class-->
+</div>
 
-   
 <?php endwhile; ?>
     
     <?php else: ?>
