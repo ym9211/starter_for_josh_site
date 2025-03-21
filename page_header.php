@@ -35,9 +35,10 @@ if ($paged>1) {
 <meta name="description" content="<?php bloginfo('description'); ?>">
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
 
+<?php wp_head(); ?>
 </head>
 <body>
-    <header class="container-fluid smallpage-bg">
+<header class="container-fluid smallpage-bg">   <!-- div for the main image the stretches to the edge of the page- -->
         <div class="container">
         
     <nav class="navbar navbar-expand-md navbar-dark">
@@ -68,9 +69,7 @@ if ($paged>1) {
         </div>
     </nav>
 
-<div class="smallpage-tag"><!--div that holds the content in the middle of the page- -->
-        <h1 class="smallpage-title"> Projects </h1><!-- the main tag line-->
-    </div>
+    <div class="container smallpage-tag"><!-- div that holds the content in the middle of the page-->
+        <h1 class="smallpage-title"> Josh’s CV</h1>
     </div><!--container-->
-    <?php wp_head(); ?>
     </header>
