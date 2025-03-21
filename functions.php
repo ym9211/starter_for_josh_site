@@ -18,7 +18,6 @@ function register_navwalker(){
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
 ?>
-
 <?php
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'top-menu' ),
