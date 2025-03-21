@@ -40,31 +40,32 @@ if ($paged>1) {
     <header class="container-fluid bg1">
         <div class="container">
         
-    <nav class="navbar navbar-expand-md navbar-dark">
-
-        <a class="navbar-brand" href="#"><span class="josh">JOSH</span><span class="orange">WHITKIN</span></a>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href=" http://170.187.231.66/~mesh19/"><span class="josh">JOSH</span><span class="orange">WHITKIN</span></a>
       
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <?php 
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+    
+      <?php 
 
 wp_nav_menu( array(
-  'theme_location'  => 'primary',
-  'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
-  'container'       => 'div',
-  'container_class' => 'collapse navbar-collapse',
-  'container_id'    => 'bs-example-navbar-collapse-1',
-  'menu_class'      => 'navbar-nav ml-auto',
-  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-  'walker'          => new WP_Bootstrap_Navwalker(),
+'theme_location'  => 'primary',
+'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+'container'       => 'div',
+'container_class' => 'collapse navbar-collapse',
+'container_id'    => 'bs-example-navbar-collapse-1',
+'menu_class'      => 'navbar-nav ml-auto',
+'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+'walker'          => new WP_Bootstrap_Navwalker(),
 ) );
 
 ?>
 
-    </nav>
+    </nav> 
+
 
 <div class="tag"><!--div that holds the content in the middle of the page- -->
         <h1> Games Design For the future </h1><!-- the main tag line-->
