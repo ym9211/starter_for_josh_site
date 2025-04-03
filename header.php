@@ -37,7 +37,7 @@ if ($paged>1) {
 
 </head>
 <body>
-    <header class="container-fluid bg1">
+<header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
         <div class="container">
         
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -68,7 +68,7 @@ wp_nav_menu( array(
 
 
 <div class="tag"><!--div that holds the content in the middle of the page- -->
-        <h1> Games Design For the future </h1><!-- the main tag line-->
+<h1><?php the_field('maintagline'); ?></h1>
     </div>
     </div><!--container-->
     <?php wp_head(); ?>
