@@ -20,7 +20,7 @@
     <h3 class="text-center"><?php the_field('titleforarticles'); ?></h3>
         <div class="row">
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-4">
             <?php
 $image = get_field('articleimage');
 ?>
@@ -32,7 +32,7 @@ $image = get_field('articleimage');
                 <a href="<?php the_field('readmore'); ?>" class="readmore">CONTINUE READING</a>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-4">
             <?php
 $image = get_field('articleimage_middle');
 ?>
@@ -43,7 +43,7 @@ $image = get_field('articleimage_middle');
                 <a href="<?php the_field('readmore_middle'); ?>" class="readmore">CONTINUE READING</a>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-4">
             <?php
 $image = get_field('articleimage_right');
 ?>
