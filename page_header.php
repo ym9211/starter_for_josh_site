@@ -70,6 +70,8 @@ if ($paged>1) {
     </nav>
 
     <div class="container smallpage-tag"><!-- div that holds the content in the middle of the page-->
-        <h1 class="smallpage-title"> Josh’s CV</h1>
-    </div><!--container-->
+<h1 class="smallpage-title"><?php the_field('projectsheadertitle'); ?> </h1>
+</div>              
+</div><!-- container-->
+
     </header>
