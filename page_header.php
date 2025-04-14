@@ -38,7 +38,7 @@ if ($paged>1) {
 <?php wp_head(); ?>
 </head>
 <body>
-<header class="container-fluid smallpage-bg">   <!-- div for the main image the stretches to the edge of the page- -->
+<header class="container-fluid" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">
         <div class="container">
         
     <nav class="navbar navbar-expand-md navbar-dark">
